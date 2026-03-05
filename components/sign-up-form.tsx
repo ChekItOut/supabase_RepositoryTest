@@ -1,7 +1,13 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { useState } from "react";
+
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 import { createClient } from "@/lib/supabase/client";
+import { cn } from "@/lib/utils";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -12,9 +18,6 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
 
 export function SignUpForm({
   className,

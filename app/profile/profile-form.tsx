@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+
 import type { Tables } from "@/lib/database.types";
+
 import { updateProfile } from "./actions";
 
 type Profile = Tables<"profiles">;

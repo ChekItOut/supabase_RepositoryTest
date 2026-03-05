@@ -1,9 +1,12 @@
+import { Suspense } from "react";
+
 import { redirect } from "next/navigation";
 
-import { createClient } from "@/lib/supabase/server";
 import { InfoIcon } from "lucide-react";
+
+import { createClient } from "@/lib/supabase/server";
+
 import { FetchDataSteps } from "@/components/tutorial/fetch-data-steps";
-import { Suspense } from "react";
 
 async function UserDetails() {
   const supabase = await createClient();

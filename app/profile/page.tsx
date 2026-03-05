@@ -1,6 +1,9 @@
-import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
 import { Suspense } from "react";
+
+import { redirect } from "next/navigation";
+
+import { createClient } from "@/lib/supabase/server";
+
 import { ProfileForm } from "./profile-form";
 
 async function ProfileData() {
